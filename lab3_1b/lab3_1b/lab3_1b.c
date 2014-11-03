@@ -5,11 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-short set_MSB_to_one(short value)
-{
-	short maskMSB = 0x8000;
-	return value = value | maskMSB;
-}
+short set_MSB_to_one(short);
 
 int main()
 {
@@ -29,4 +25,10 @@ int main()
 
 	system("pause");
 	return 0;
+}
+
+short set_MSB_to_one(short value)
+{
+	short maskMSB = 0x8000;
+	return value = value | maskMSB;
 }
